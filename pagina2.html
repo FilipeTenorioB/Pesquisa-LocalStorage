@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa - Filipe Tenório</title>
+
+</head>
+
+<body>
+
+    <form class="div-conteudo">
+
+        <h1 class = "titulo-pesquisa">Pesquisa sobre leitura digital (2/4)</h1>
+
+        <h2 class="texto-pergunta">Você costuma ler livros digitais?</h2>
+
+        <input id="escolha-sim" name="escolha" type="radio"><label for="escolha-sim">Sim, leio com frequência.</label>
+
+        <br>
+
+        <input id="escolha-nao" name="escolha"  type="radio"><label for="escolha-nao">Não possuo esse costume.</label>
+
+        <br>
+
+        <div id="caso_escolha-sim" style="display: none;">
+
+            <h2 class="texto-pergunta">Disserte sua experiência com E-Books: </h2>
+            <textarea id="resposta-Ebooks" cols="40" rows="15"></textarea>
+
+        </div>
+
+        <div id="caso_escolha-nao" style="display: none;">
+
+            <h2 class="texto-pergunta">Disserte o porquê de você não aderir a uma leitura digital: </h2>
+            <textarea id="resposta-Aderir" cols="40" rows="15"></textarea>
+
+        </div>
+
+        <br><br>
+
+        <div>
+
+            <input type="button" class = "botao-escolha" onclick="window.location.href = 'index.html';" value="Anterior" id="anterior">
+            <input type="button" class = "botao-escolha" onclick="window.location.href = 'pagina3.html';" value="Próxima" id="proximo">
+
+       </div>
+
+       <br><br>
+
+       <img class = "imagem-circulo" src="img/page-2.jpg">
+
+    </form>
+
+    <script language="javascript" src="js/pagina2.js"></script>
+
+
+</body>
+</html>
